@@ -61,9 +61,9 @@ async function syncQuotes() {
     if (!q.serverId) {
       try {
         await fetch(SERVER_URL, {
-          method: "POST",
-          body: JSON.stringify({ title: q.text, body: q.category }),
-          headers: { "Content-type": "application/json; charset=UTF-8" }
+            method: "POST",
+            body: JSON.stringify({ title: q.text, body: q.category }),
+            headers: { "Content-Type": "application/json; charset=UTF-8" }
         });
       } catch (e) {}
     }
