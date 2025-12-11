@@ -9,7 +9,12 @@
 
   <h1>Dynamic Quote Generator</h1>
 
-  <!-- Category Filter Dropdown -->
+  <!-- Sync Status -->
+  <div id="syncStatus" style="padding:10px; margin-bottom:15px; font-weight:bold; color:green;">
+    Syncing with server...
+  </div>
+
+  <!-- Filter -->
   <div style="margin-bottom: 20px;">
     <label for="categoryFilter">Filter by category: </label>
     <select id="categoryFilter">
@@ -17,23 +22,21 @@
     </select>
   </div>
 
-  <!-- Current Quote Display -->
   <div id="quoteDisplay"></div>
-
   <button id="newQuote">Show New Quote</button>
 
-  <!-- Add New Quote -->
+  <!-- Add Quote -->
   <div style="margin-top:20px;">
     <input id="newQuoteText" type="text" placeholder="Enter a new quote" />
     <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
     <button id="addQuoteBtn">Add Quote</button>
   </div>
 
-  <!-- Import & Export -->
+  <!-- Import / Export + Sync Button -->
   <div style="margin-top:30px;">
-    ">
     <button id="exportBtn">Export Quotes</button>
     <input type="file" id="importFile" accept=".json" />
+    <button id="forceSyncBtn" style="margin-left:10px; background:#0066cc; color:white;">Force Sync Now</button>
   </div>
 
   <script src="script.js"></script>
