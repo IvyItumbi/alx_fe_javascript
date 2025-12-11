@@ -73,7 +73,7 @@ async function syncQuotes() {
   populateCategories();
 
   if (hasNewFromServer) {
-    updateSyncStatus("New quotes synced from server!", "green");
+    updateSyncStatus("Quotes synced with server!", "green");
     setTimeout(() => updateSyncStatus("All quotes up to date", "green"), 4000);
   } else {
     updateSyncStatus("Already up to date", "green");
